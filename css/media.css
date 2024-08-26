@@ -1,0 +1,31 @@
+@media(min-width:992px){
+    .nav-item .active{
+        &::before{
+            width: 65%;
+        }
+    }
+    .nav-link{
+        &::before{
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 3px;
+        background-color: #fff;
+        bottom: 0;
+        left: 10px;
+        transition:  .5s;
+       }
+        &:hover{
+        color: #fff;
+       }
+       &:hover::before{
+       width:65%;
+       }
+     }
+     .dropdown-item{
+        transition: color 350ms;
+        &:hover{
+            color: #0d6efd;
+        }
+     }
+}
